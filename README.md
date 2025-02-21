@@ -5,7 +5,7 @@
 -   Read analog inputs from the joystick
 -   Process joystick data
 -   Control outputs based on joystick position
--   Send joystick data to 1088BS 8x8 LED Matrix
+-   Send joystick data to 1088BS 8x8 LED Matrix and show the position as a dot, or as a 2x2 square when centered
 
 ## Wiring Diagram
 
@@ -18,11 +18,12 @@
 -   Microcontroller (Arduino UNO)
 -   Joystick module
 -   1088BS 8x8 LED Matrix
+-   Wires
 
 ## Usage
 
-1. Connect the joystick to the microcontroller (GND, +5V, VRX -> A0, VRY -> A1);
-2. Power up the microcontroller and upload the code.
+1. Connect the joystick to the microcontroller (GND, +5V, VRX -> A0, VRY -> A1). The REF's on the joystick may differ, HOR, VER and so on
+2. Power up the microcontroller and upload the code
 
 ## Code
 
@@ -95,7 +96,3 @@ void loop()
 	Display(matrix);
 }
 ```
-
-## License
-
-This project is licensed under the MIT License.
