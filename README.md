@@ -11,7 +11,7 @@
 
 ![Wiring Diagram](joystick-matrix.png)
 
-### Label need to be on the red line
+### Label 1088BS is on the bottom side in diagram
 
 ## Requirements
 
